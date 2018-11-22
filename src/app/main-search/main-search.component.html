@@ -1,0 +1,6 @@
+<div class="search-box">
+  <mat-form-field class="search-input" >
+    <input matInput (keyup.enter)="searchPet()" [formControl]="name" placeholder="Search your pats" />
+  </mat-form-field>
+  <button mat-icon-button type="submit" (click)="searchPet()"><mat-icon class="icon">search</mat-icon></button>
+</div>

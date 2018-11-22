@@ -1,0 +1,21 @@
+.example-container {
+    width: 100vw;
+    height: 100vh;
+}
+.menu-btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 35px;
+    left: 70%;
+    z-index: 5;
+}
+.sidenav {
+    width: 250px;
+}
+.group {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+    outline: none;
+    cursor: pointer;
+  }

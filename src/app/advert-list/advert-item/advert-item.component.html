@@ -1,0 +1,14 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title class="title">{{post.marker}}</mat-card-title>
+    <mat-card-subtitle class="subtitle">{{post.animal}}, {{post.kind}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src={{post.photo}} alt="Photo of a pet">
+  <mat-card-content>
+    <p>Color: {{post.color}}</p>
+    <p> Age: {{post.age}}</p>
+    <p>
+     If you saw them, please call on phone <i>{{post.tel}}</i>
+    </p>
+  </mat-card-content>
+</mat-card>

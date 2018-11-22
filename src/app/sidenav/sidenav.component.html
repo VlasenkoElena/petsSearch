@@ -1,0 +1,23 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="over">
+        <mat-list>
+            <mat-list-item class="group" routerLinkActive="active" [routerLink]="['map']">
+              <mat-icon class="mat-icon">map</mat-icon>
+              <a class="link">Map</a>
+            </mat-list-item>
+            <mat-list-item class="group" routerLinkActive="active" [routerLink]="['advert-list']">
+                <mat-icon class="mat-icon">dashboard</mat-icon>
+                <a class="link">Dashboard</a>
+              </mat-list-item>
+            </mat-list>
+    </mat-drawer>
+   
+    <div class="example-sidenav-content">
+        <button  mat-button (click)="drawer.toggle()" class="menu-btn">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <app-main-search></app-main-search>
+          <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>

@@ -1,0 +1,49 @@
+<mgl-map
+  [style]="'mapbox://styles/mapbox/streets-v9'"
+  [zoom]="[12]"
+  [center]="[35.132904, 47.844031]"
+  (click)="mapClicked($event)"
+>
+  <div *ngFor="let marker of markers; let i = index">
+    <mgl-marker #myMarker [lngLat]="[marker.location.lng, marker.location.lat]">
+      <!-- <img src="{{m.photo}}" alt="" /> -->
+    </mgl-marker>
+    <mgl-popup
+    [closeOnClick]="true"
+    [marker]="myMarker">
+    <i>{{marker.name}}</i> <br>
+    <img src="{{marker.photo}}" alt="" /> <br>
+    <span class="color-marker">{{marker.marker}}</span> <br>
+    {{marker.kind}}<br>
+    {{marker.animal}} <br>
+    {{marker.tel}}
+  </mgl-popup>
+  </div>
+</mgl-map>
+
+<!--
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+
+    <agm-marker
+    *ngFor="let m of markers; let i = index"
+    (markerClick)="clickedMarker(m.label, i)"
+    [latitude]="m.location.lat"
+    [longitude]="m.location.lng"
+    (dragEnd)="markerDragEnd(m, $event)">
+
+  <agm-info-window>
+    <strong>{{m.animal}}</strong>
+  </agm-info-window>
+
+  </agm-marker>
+  </agm-map>
+-->
+<!--
+  <div class="map"
+       leaflet
+       [leafletOptions]="options">
+  <div *ngFor="let l of markers" [leafletLayer]="layers">
+  </div>
+  </div>
+-->

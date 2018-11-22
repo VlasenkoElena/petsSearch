@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Hi, who did you lose? </h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput [formControl]="name">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="addPet()" cdkFocusInitial>Ok</button>
+</div>
