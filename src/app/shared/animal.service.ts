@@ -18,7 +18,11 @@ export class AnimalService {
         return this.http.get<Post[]>('http://localhost:3000/animals');
     }
 
-    addPet(body): Observable<any> {
-        return this.http.post<any>('http://localhost:3000/animals', body, this.headers);
+    addPet(body): Observable<Post> {
+        return this.http.post<Post>('http://localhost:3000/animals', body, this.headers);
+    }
+
+    deletePet(id) {
+        return this.http.delete(`http://localhost:3000/animals/${id}`);
     }
 }

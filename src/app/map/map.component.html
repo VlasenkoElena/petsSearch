@@ -1,22 +1,24 @@
 <mgl-map
   [style]="'mapbox://styles/mapbox/streets-v9'"
-  [zoom]="[12]"
+  [zoom]="[11]"
   [center]="[35.132904, 47.844031]"
+  (load)="map = $event"
   (click)="mapClicked($event)"
 >
   <div *ngFor="let marker of markers; let i = index">
-    <mgl-marker #myMarker [lngLat]="[marker.location.lng, marker.location.lat]">
-      <!-- <img src="{{m.photo}}" alt="" /> -->
+    <mgl-marker #myMarker  [lngLat]="[marker.location.lng, marker.location.lat]">
+      <!-- <img src="{{marker.photo}}" alt="" /> -->
     </mgl-marker>
     <mgl-popup
     [closeOnClick]="true"
     [marker]="myMarker">
-    <i>{{marker.name}}</i> <br>
-    <img src="{{marker.photo}}" alt="" /> <br>
+    <i class="name">{{marker.name}}</i> <br>
+    <img class="img" src="{{marker.photo}}" alt="" /> <br>
     <span class="color-marker">{{marker.marker}}</span> <br>
     {{marker.kind}}<br>
     {{marker.animal}} <br>
-    {{marker.tel}}
+    {{marker.tel}} <br>
+    <span class="delete" (click)="delMarker(marker.id)">Delete</span>
   </mgl-popup>
   </div>
 </mgl-map>

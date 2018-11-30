@@ -19,6 +19,7 @@ import { AnimalService } from './shared/animal.service';
 import { AdvertItemComponent } from './advert-list/advert-item/advert-item.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddPopupComponent } from './map/add-popup/add-popup.component';
+import { PhoneMaskDirective } from './shared/directives/phone-mask.directive';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AddPopupComponent } from './map/add-popup/add-popup.component';
     AdvertListComponent,
     SidenavComponent,
     AdvertItemComponent,
-    AddPopupComponent
+    AddPopupComponent,
+    PhoneMaskDirective
   ],
   imports: [
     BrowserModule,

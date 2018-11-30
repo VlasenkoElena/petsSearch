@@ -10,7 +10,21 @@ mgl-map {
 img {
   width: 70px;
   height: 50px;
+  border-radius: 50%;
+}
+mgl-popup {
+  width: 100px;
 }
 .color-marker {
   color: red;
+}
+.name {
+  font-size: 12px;
+  font-weight: bold;
+}
+.img {
+  margin: auto;
+}
+.delete {
+  cursor: pointer;
 }

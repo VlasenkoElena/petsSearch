@@ -22,26 +22,27 @@ export class MainSearchComponent implements OnInit {
 
   constructor(private animalService: AnimalService) { }
 
-  ngOnInit() { 
+  ngOnInit() {
+    this.getPets();
+  }
+  getPets() {
     this.animalService.getPets().subscribe(
       data => {
         this.markers = data;
-        console.log(this.markers);
       }
     );
   }
 
   searchPet() {
     this.searchName = this.name.value;
-   // console.log(this.arrayPets);
-   console.log(this.markers);
-   
+    console.log(this.searchName);
+    // let newColor = this.markers.filter(element => {
+    //   return element.color === this.searchName;
+    // });
 
     let newAnimal = this.markers.filter(name => {
-        return name.animal === this.searchName;
+        return name.animal === this.searchName.toLowerCase();
       });
-
-      console.log(newAnimal);
 
     if (newAnimal.length === 0) {
       alert ('Pets not found');
@@ -51,6 +52,11 @@ export class MainSearchComponent implements OnInit {
      this.name.setValue('');
       console.log(newAnimal);
       console.log(this.markers);
+  }
+
+  allMarkers() {
+    this.newAnimal.emit(this.markers);
+    console.log(this.markers);
   }
 
 }

@@ -31,21 +31,6 @@
       "photo": "https://aroundpet.ru/wp-content/uploads/vzyat-domoj-chernogo-kota-2.jpg"
     },
     {
-      "id": 3,
-      "marker": "lost",
-      "name": "Smil",
-      "animal": "kvokka",
-      "kind": "wild",
-      "age": "4",
-      "color": "broun",
-      "location": {
-        "lat": 47.840045,
-        "lng": 35.13091
-      },
-      "tel": "+38066414233",
-      "photo": "https://lemurov.net/wp-content/uploads/2017/03/1-155.jpg"
-    },
-    {
       "id": 4,
       "marker": "lost",
       "name": "Tobbi",
@@ -74,6 +59,66 @@
       },
       "tel": "+38093224433",
       "photo": "https://www.catster.com/wp-content/uploads/2014/08/An-albino-cat.jpg"
+    },
+    {
+      "animal": "cat",
+      "kind": "fat",
+      "name": "Puh",
+      "age": "2",
+      "color": "colorful",
+      "location": {
+        "lng": 35.029649681817205,
+        "lat": 47.86200075903494
+      },
+      "tel": "(099) 270-3323",
+      "photo": "https://static.boredpanda.com/blog/wp-content/uploads/2018/04/fb_image_5ad0a85f933fa__700.jpg",
+      "marker": "lost",
+      "id": 9
+    },
+    {
+      "animal": "cavy",
+      "kind": "pretty",
+      "name": "Nush",
+      "age": "4",
+      "color": "colorful",
+      "location": {
+        "lng": 35.0828647086401,
+        "lat": 47.82928193148712
+      },
+      "tel": "(066) 356-2322",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrmamyOSO4jS4HCL_CxuoGdk4iHcDvZWu_5ShSJ27nCXY0t7jC",
+      "marker": "lost",
+      "id": 13
+    },
+    {
+      "animal": "fish",
+      "kind": "little",
+      "name": "Nemo",
+      "age": "3",
+      "color": "orange",
+      "location": {
+        "lng": 35.1007174918322,
+        "lat": 47.88019455213583
+      },
+      "tel": "(066) 782-5332",
+      "photo": "https://inokean.ru/preview/800/aW1hZ2VzL2Zpc2gvY2xvd24vMS5qcGc=",
+      "marker": "lost",
+      "id": 14
+    },
+    {
+      "animal": "mouse",
+      "kind": "little",
+      "name": "J",
+      "age": "1",
+      "color": "grey",
+      "location": {
+        "lng": 35.22971039943323,
+        "lat": 47.891567917568864
+      },
+      "tel": "(097) 025-4254",
+      "photo": "https://cdn.images.express.co.uk/img/dynamic/130/590x/secondary/A-mouse-1028634.jpg",
+      "marker": "lost",
+      "id": 15
     }
   ]
 }

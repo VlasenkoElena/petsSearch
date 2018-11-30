@@ -1,0 +1,14 @@
+.content {
+    width: 80%;
+    margin: auto;
+}
+.title {
+    text-align: center;
+}
+.field {
+    width: 100%;
+}
+.btn {
+    display: flex;
+    justify-content: space-around;
+}

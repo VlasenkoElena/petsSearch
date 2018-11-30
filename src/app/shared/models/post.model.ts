@@ -1,8 +1,7 @@
 export class Post {
-    id: number;
-    marker: string;
     animal: string;
     kind: string;
+    name: string;
     age: number;
     color: string;
     location: {
@@ -10,6 +9,30 @@ export class Post {
           lng: number
         };
     tel: number;
-    photo: string;
+    photo?: string;
+    id?: number;
+    marker?: string;
+    constructor( animal: string,
+        kind: string,
+        name: string,
+        age: number,
+        color: string,
+        location: {
+            lat: number,
+            lng: number
+        },
+        tel: number,
+        photo: string,
+        marker: string ) {
+            this.animal = animal;
+            this.kind = kind;
+            this.name = name;
+            this.age = age;
+            this.color = color;
+            this.location = location;
+            this.tel = tel;
+            this.photo = photo;
+            this.marker = marker;
+        }
 }
 

@@ -9,7 +9,8 @@ import { MatButtonModule,
   MatMenuModule,
   MatSelectModule,
   MatSidenavModule,
-  MatToolbarModule } from '@angular/material';
+  MatToolbarModule,
+  MatAutocompleteModule} from '@angular/material';
   import {MatDialogModule} from '@angular/material/dialog';
 
 
@@ -24,7 +25,8 @@ const MATERIAL_COMPONENTS = [
   MatInputModule,
   MatListModule,
   MatMenuModule,
-  MatDialogModule
+  MatDialogModule,
+  MatAutocompleteModule
 ];
 @NgModule({
   imports: [
