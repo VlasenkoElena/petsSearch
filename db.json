@@ -100,7 +100,7 @@
       "animal": "mouse",
       "icon": "../../assets/img/icons2.png",
       "kind": "little",
-      "name": "J",
+      "name": "Jerry",
       "age": "1",
       "color": "grey",
       "location": {
@@ -111,6 +111,21 @@
       "photo": "https://cdn.images.express.co.uk/img/dynamic/130/590x/secondary/A-mouse-1028634.jpg",
       "marker": "lost",
       "id": 15
+    },
+    {
+      "animal": "pig",
+      "kind": "little",
+      "name": "Sweety",
+      "age": "2",
+      "color": "pink",
+      "location": {
+        "lng": 35.03142578860198,
+        "lat": 47.79743844668653
+      },
+      "tel": "(220) 550-5555",
+      "photo": "https://znaifermu.ru/wp-content/uploads/2018/03/anons-16.jpg",
+      "marker": "lost",
+      "id": 16
     }
   ]
 }

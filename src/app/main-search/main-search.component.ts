@@ -12,7 +12,6 @@ import { AnimalService } from '../shared/animal.service';
 export class MainSearchComponent implements OnInit {
   name = new FormControl('');
   searchName: string;
-  // @Input() arrayPets: Post[];
   markers: Post[];
 
   @Output()

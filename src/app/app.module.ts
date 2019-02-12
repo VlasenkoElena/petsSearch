@@ -8,9 +8,6 @@ import { MainSearchComponent } from './main-search/main-search.component';
 import { AdvertListComponent } from './advert-list/advert-list.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 
-
-import { AgmCoreModule } from '@agm/core';
-import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutes } from './app.routing';
@@ -20,6 +17,7 @@ import { AdvertItemComponent } from './advert-list/advert-item/advert-item.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddPopupComponent } from './map/add-popup/add-popup.component';
 import { PhoneMaskDirective } from './shared/directives/phone-mask.directive';
+import { DeleteCardComponent } from './map/delete-card/delete-card.component';
 
 
 @NgModule({
@@ -31,7 +29,8 @@ import { PhoneMaskDirective } from './shared/directives/phone-mask.directive';
     SidenavComponent,
     AdvertItemComponent,
     AddPopupComponent,
-    PhoneMaskDirective
+    PhoneMaskDirective,
+    DeleteCardComponent
   ],
   imports: [
     BrowserModule,
@@ -45,12 +44,8 @@ import { PhoneMaskDirective } from './shared/directives/phone-mask.directive';
       accessToken: 'pk.eyJ1IjoiaGVsZGV2IiwiYSI6ImNqb3IyOXRueTA5angzcW4yZ3A0c2tmdzAifQ.uy44VYJlEiqajYgXDamA1w',
       geocoderAccessToken: 'pk.eyJ1IjoiaGVsZGV2IiwiYSI6ImNqb3IyOXRueTA5angzcW4yZ3A0c2tmdzAifQ.uy44VYJlEiqajYgXDamA1w'
     }),
-   // LeafletModule.forRoot()
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'AIzaSyBT66Pto2PbxwkiVQl5g3fyIyyZJ8NvKH8'
-    // })
   ],
-  entryComponents: [AddPopupComponent],
+  entryComponents: [AddPopupComponent, DeleteCardComponent],
   providers: [AnimalService],
   bootstrap: [AppComponent]
 })
