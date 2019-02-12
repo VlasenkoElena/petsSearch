@@ -50,6 +50,7 @@ export class MapComponent implements OnInit {
     });
     dialogRef.afterClosed().subscribe(result => {
       this.data = result;
+      // console.log(this.data);
       if (this.data === true) {
         this.animalService.deletePet(id).subscribe(data => console.log(data));
         this.markers = this.markers.filter((elem) => {

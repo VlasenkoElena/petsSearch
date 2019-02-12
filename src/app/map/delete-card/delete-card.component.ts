@@ -10,7 +10,7 @@ export class DeleteCardComponent implements OnInit {
   data = true;
 
   constructor(public dialogRef: MatDialogRef<DeleteCardComponent>,
-    @Inject(MAT_DIALOG_DATA)) { }
+    @Inject(MAT_DIALOG_DATA) public info) { }
 
   ngOnInit() {
   }
