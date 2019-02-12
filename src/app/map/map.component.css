@@ -1,30 +1,60 @@
 .map {
   position: relative;
   height: 100vh;
-  z-index: 1;
 }
 mgl-map {
   height: 100vh;
   width: 100%;
 }
-img {
+.marker  {
+  width: 30px;
+  height: 30px;
+}
+/* img {
   width: 70px;
   height: 50px;
+  margin: auto;
   border-radius: 50%;
+} */
+::ng-deep mgl-popup .mapboxgl-popup {
+  width: 200px;
+  height: 100px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.22);
+  z-index: 3;
 }
-mgl-popup {
-  width: 100px;
+
+::ng-deep .mapboxgl-popup-content {
+  width: 200px;
+  padding: 20px 30px 20px;
+  border-radius: 5px;
 }
 .color-marker {
   color: red;
 }
+.popup {
+  width: 180px;
+  padding: 20px 30px 20px;
+  /* width: 150px; */
+}
 .name {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
 }
+.marker-size {
+  font-size: 14px;
+}
+.img-container {
+  /* margin: auto; */
+  overflow: hidden;
+}
 .img {
-  margin: auto;
+ width: 200px;
+ /* margin: auto; */
 }
 .delete {
+  color: #3d3d3e;
   cursor: pointer;
+}
+.delete:hover {
+  color: #666666;
 }

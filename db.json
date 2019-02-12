@@ -5,6 +5,7 @@
       "marker": "lost",
       "name": "Ralf",
       "animal": "dog",
+      "icon": "../../assets/img/icons2.png",
       "kind": "beagle",
       "age": 2,
       "color": "light",
@@ -20,6 +21,7 @@
       "marker": "lost",
       "name": "Murlo",
       "animal": "cat",
+      "icon": "../../assets/img/icons2.png",
       "kind": "yard",
       "age": "3",
       "color": "black",
@@ -35,6 +37,7 @@
       "marker": "lost",
       "name": "Tobbi",
       "animal": "parrot",
+      "icon": "../../assets/img/icons2.png",
       "kind": "corella",
       "age": "1",
       "color": "light-green",
@@ -50,6 +53,7 @@
       "marker": "lost",
       "name": "Bom",
       "animal": "cat",
+      "icon": "../../assets/img/icons2.png",
       "kind": "fluffy",
       "age": "1",
       "color": "white",
@@ -62,6 +66,7 @@
     },
     {
       "animal": "cat",
+      "icon": "../../assets/img/icons2.png",
       "kind": "fat",
       "name": "Puh",
       "age": "2",
@@ -76,22 +81,8 @@
       "id": 9
     },
     {
-      "animal": "cavy",
-      "kind": "pretty",
-      "name": "Nush",
-      "age": "4",
-      "color": "colorful",
-      "location": {
-        "lng": 35.0828647086401,
-        "lat": 47.82928193148712
-      },
-      "tel": "(066) 356-2322",
-      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrmamyOSO4jS4HCL_CxuoGdk4iHcDvZWu_5ShSJ27nCXY0t7jC",
-      "marker": "lost",
-      "id": 13
-    },
-    {
       "animal": "fish",
+      "icon": "../../assets/img/icons2.png",
       "kind": "little",
       "name": "Nemo",
       "age": "3",
@@ -107,6 +98,7 @@
     },
     {
       "animal": "mouse",
+      "icon": "../../assets/img/icons2.png",
       "kind": "little",
       "name": "J",
       "age": "1",

@@ -26,14 +26,16 @@ export class MapComponent implements OnInit {
   constructor(private animalService: AnimalService, public dialog: MatDialog) {}
 
   ngOnInit() {
-    this.map.on('click', 'symbols', function (e) {
-      this.map.flyTo({center: e.this.markers[0].location});
-  });
+  //  this.map = new mapboxgl.Map();
+  //   this.map.on('click', 'symbols', function (e) {
+  //     this.map.flyTo({center: e.this.markers[0].location});
+  // });
   }
 
   mapClicked($event) {
     const isMouseEvent = $event instanceof MouseEvent;
     const myMarker = $event.target.nodeName;
+    console.log(myMarker);
     if (!isMouseEvent) {
       this.location = $event.lngLat;
     }
@@ -53,15 +55,17 @@ export class MapComponent implements OnInit {
   }
 
   delMarker(id) {
-   this.animalService.deletePet(id).subscribe(data => console.log(data));
-   console.log(id);
-   this.markers = this.markers.filter((element) => {
-     if (element.id !== id) {
-      return element.id;
-     }
-   });
-   console.log(this.markers);
+   const resultConfirm = confirm('Want to delete?');
+   if (resultConfirm === true) {
+    this.animalService.deletePet(id).subscribe(data => console.log(data));
+    console.log(id);
+    this.markers = this.markers.filter((element) => {
+      if (element.id !== id) {
+       return element.id;
+      }
+    });
+    console.log(this.markers);
+   }
+   return;
   }
-
-
 }

@@ -6,46 +6,23 @@
   (click)="mapClicked($event)"
 >
   <div *ngFor="let marker of markers; let i = index">
-    <mgl-marker #myMarker  [lngLat]="[marker.location.lng, marker.location.lat]">
-      <!-- <img src="{{marker.photo}}" alt="" /> -->
+    <mgl-marker #myMarker [lngLat]="[marker.location.lng, marker.location.lat]">
+      <!-- <img class="marker" src="{{marker.icon}}" alt="" /> -->
+      <img class="marker" src="../../assets/img/ico4.png" alt="" />
     </mgl-marker>
-    <mgl-popup
-    [closeOnClick]="true"
-    [marker]="myMarker">
-    <i class="name">{{marker.name}}</i> <br>
-    <img class="img" src="{{marker.photo}}" alt="" /> <br>
-    <span class="color-marker">{{marker.marker}}</span> <br>
-    {{marker.kind}}<br>
-    {{marker.animal}} <br>
-    {{marker.tel}} <br>
-    <span class="delete" (click)="delMarker(marker.id)">Delete</span>
-  </mgl-popup>
+    <mgl-popup  class="popup"
+      [closeOnClick]="true" 
+      [closeButton]="false"
+      [marker]="myMarker">
+      <h4> {{ marker.animal }} <i class="name">{{ marker.name }}</i></h4>
+      <div class="img-container">
+      <img class="img" src="{{marker.photo}}" alt="" /> <br />
+      </div>
+      <span class="color-marker">{{ marker.marker }}</span> <br />
+      <span class="marker-size">{{ marker.kind }}</span><br />
+      <span class="marker-size">{{ marker.tel }}</span><br />
+      <span class="delete" (click)="delMarker(marker.id)">Delete</span>
+    </mgl-popup>
   </div>
 </mgl-map>
 
-<!--
-  <agm-map [latitude]="lat" [longitude]="lng">
-    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-
-    <agm-marker
-    *ngFor="let m of markers; let i = index"
-    (markerClick)="clickedMarker(m.label, i)"
-    [latitude]="m.location.lat"
-    [longitude]="m.location.lng"
-    (dragEnd)="markerDragEnd(m, $event)">
-
-  <agm-info-window>
-    <strong>{{m.animal}}</strong>
-  </agm-info-window>
-
-  </agm-marker>
-  </agm-map>
--->
-<!--
-  <div class="map"
-       leaflet
-       [leafletOptions]="options">
-  <div *ngFor="let l of markers" [leafletLayer]="layers">
-  </div>
-  </div>
--->
