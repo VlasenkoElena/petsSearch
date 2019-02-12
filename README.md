@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `json-server --watch db.json` for a run db.json. 
 
-![Image alt](src/doc/main_window.png)
+![Image alt](src/doc/search.png)
 
 ## Build
 
